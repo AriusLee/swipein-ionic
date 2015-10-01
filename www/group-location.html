@@ -1,0 +1,76 @@
+<ion-view view-title="Group Location">
+
+  <ion-nav-bar>
+    <ion-nav-back-button></ion-nav-back-button>
+  </ion-nav-bar>
+
+  <ion-content class="bg-gray">
+    <div class="list">
+      <label class="item item-input item-select">
+        <span class="input-label">Wifi Router*</span>
+        <select style="width: 100%; direction: ltr; padding-left: 10px;">
+          <option selected>Wifi 1</option>
+          <option>Wifi 2</option>
+        </select>
+      </label>
+      <h5 class="text-gray text-bold" style="padding: 15px 15px 5px;">Group Location</h5>
+      <div class="location-options" ng-show="!showLocationFields">
+        <div class="item item-icon-right" href="#/group-location" ng-click="showLocationFields = true">
+          Use Current Location
+          <i class="icon ion-chevron-right" style="font-size: 18px; color: #CCC;"></i>
+        </div>
+        <a class="item item-icon-right" href="#/home">
+          Enter Location Manually
+          <i class="icon ion-chevron-right" style="font-size: 18px; color: #CCC;"></i>
+        </a>
+      </div>
+      <div class="location-fields" ng-show="showLocationFields">
+        <label class="item item-input">
+          <span class="input-label">Address*</span>
+          <input type="text" placeholder="Line 1">
+        </label>
+        <label class="item item-input">
+          <span class="input-label"></span>
+          <input type="text" placeholder="Line 2">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">City*</span>
+          <input type="text" placeholder="City">
+        </label>
+
+        <label class="item item-input item-select">
+          <span class="input-label">State*</span>
+          <select style="width: 100%; direction: ltr; padding-left: 10px;">
+            <option>Kelantan</option>
+            <option selected>Selangor</option>
+            <option>Penang</option>
+            <option>Perak</option>
+            <option>Kuala Lumpur</option>
+            <option>Kedah</option>
+            <option>Perlis</option>
+            <option>Pahang</option>
+            <option>Seremban</option>
+            <option>Melacca</option>
+            <option>Johor</option>
+            <option>Sarawak</option>
+            <option>Sabah</option>
+            <option>Labuan</option>
+          </select>
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">State*</span>
+          <input type="text" placeholder="State">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Postcode*</span>
+          <input type="text" placeholder="Postcode">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Country*</span>
+          <input type="text" placeholder="Country" value="Malaysia">
+        </label>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

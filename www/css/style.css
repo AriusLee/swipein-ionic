@@ -45,6 +45,7 @@ a {
 /* FORM */
 .input-label {
   font-weight: bold;
+  font-size: 14px;
 }
 
 .toggle.toggle-assertive input:checked + .track {

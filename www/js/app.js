@@ -28,6 +28,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/new-group',
     templateUrl: 'new-group.html'
   })
+  .state('group-location', {
+    url: '/group-location',
+    templateUrl: 'group-location.html',
+    controller: 'LocationCtrl'
+  })
 
   $urlRouterProvider.otherwise('/');
 });
