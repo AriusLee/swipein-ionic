@@ -1,1 +1,25 @@
-/* Empty. Add your own CSS if you like */
+.bg-yellow {
+  background-color: #FBD96C !important;
+}
+
+.bg-gray {
+  background-color: #f5f5f5 !important;
+}
+
+.text-gray {
+  color: rgba(0,0,0,0.5);
+}
+
+.bottom-holder {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+}
+
+
+/* FORM */
+.input-label {
+  font-weight: bold;
+}
