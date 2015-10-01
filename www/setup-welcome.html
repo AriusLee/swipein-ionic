@@ -1,5 +1,45 @@
 <ion-view view-title="Welcome">
-  <ion-content class="padding">
-    <h1>Welcome</h1>
+  <ion-content class="bg-dark padding">
+    <div class="text-center padding">
+      <h1>Welcome</h1>
+      <p style="opacity: 0.6; margin-bottom: 20px;">You have 2 pending group requests</p>
+    </div>
+    <ion-list class="group-request-list">
+      <ion-item>
+        <div style="float: left;">
+          <h2>Pizzolo</h2>
+          <p>Invited by Terry</p>
+        </div>
+        <label class="toggle toggle-assertive" style="float: right;">
+          <input type="checkbox">
+          <div class="track">
+            <div class="handle"></div>
+          </div>
+        </label>
+      </ion-item>
+      <ion-item>
+        <div style="float: left;">
+          <h2>Torii</h2>
+          <p>Invited by Terry</p>
+        </div>
+        <label class="toggle toggle-assertive" style="float: right;">
+          <input type="checkbox">
+          <div class="track">
+            <div class="handle"></div>
+          </div>
+        </label>
+      </ion-item>
+    </ion-list>
+    <div class="text-right"><a href="#/home" class="text-yellow" style="font-weight: bold; font-size: 16px; display: inline-block; padding: 20px 0;">Get Started &raquo;</a></div>
+
+
+
   </ion-content>
+
+
+  <div class="bottom-holder padding">
+    <a href="#/join-group" class="button button-block button-outline">Join an Existing Group</a>
+    <a href="#/new-group" class="button button-block button-energized">Start a New Group</a>
+  </div>
+
 </ion-view>
