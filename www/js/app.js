@@ -21,7 +21,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
   .state('welcome', {
     url: '/welcome',
-    templateUrl: 'setup-welcome.html'
+    templateUrl: 'setup-welcome.html',
+    controller: 'WelcomeCtrl'
   })
 
   $urlRouterProvider.otherwise('/');

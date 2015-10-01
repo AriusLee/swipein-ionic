@@ -27,4 +27,31 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('SetupCtrl', function($scope) {});
+.controller('WelcomeCtrl', function($scope, $ionicPopup, $timeout) {
+  $scope.showPopup = function() {
+  $scope.data = {}
+
+  // An elaborate, custom popup
+  var myPopup = $ionicPopup.show({
+    template: '<input type="password" ng-model="data.wifi">',
+    title: 'Join an Existing Group',
+    subTitle: 'Please enter the Group ID provided by your Group Manager/Admin.',
+    scope: $scope,
+    buttons: [
+      { text: 'Cancel' },
+      {
+        text: '<b>Join</b>',
+        type: 'button-positive',
+        onTap: function(e) {
+          if (!$scope.data.group_id) {
+            //don't allow the user to close unless he enters wifi password
+            e.preventDefault();
+          } else {
+            return $scope.data.group_id;
+          }
+        }
+      }
+    ]
+  });
+ };
+});
