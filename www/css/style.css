@@ -17,6 +17,10 @@
   background-color: #f5f5f5 !important;
 }
 
+.text-bold {
+  font-weight: bold;
+}
+
 .text-gray {
   color: rgba(0,0,0,0.5);
 }

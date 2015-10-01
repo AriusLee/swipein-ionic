@@ -24,6 +24,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     templateUrl: 'setup-welcome.html',
     controller: 'WelcomeCtrl'
   })
+  .state('new-group', {
+    url: '/new-group',
+    templateUrl: 'new-group.html'
+  })
 
   $urlRouterProvider.otherwise('/');
 });
