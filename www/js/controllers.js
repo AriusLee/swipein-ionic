@@ -61,6 +61,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller("ContactsCtrl", ['$scope', '$cordovaNetwork', '$rootScope', function($scope, $cordovaNetwork, $rootScope) {
+
   document.addEventListener("deviceready", function () {
 
         $scope.network = $cordovaNetwork.getNetwork();
@@ -87,4 +88,4 @@ angular.module('starter.controllers', [])
         })
 
   }, false);
-}]);
+}])

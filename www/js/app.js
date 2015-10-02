@@ -16,8 +16,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
   .state('signup', {
-    url: '/signup',
-    templateUrl: 'setup-signup.html'
+    url: '/',
+    templateUrl: 'setup-signup.html',
+    controller: 'SignupCtrl'
   })
   .state('welcome', {
     url: '/welcome',
@@ -34,7 +35,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     controller: 'LocationCtrl'
   })
   .state('contacts', {
-    url: '/',
+    url: '/contacts',
     templateUrl: 'contacts.html',
     controller: 'ContactsCtrl'
   })
