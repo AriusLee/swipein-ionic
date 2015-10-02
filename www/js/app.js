@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngCordova'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -16,7 +16,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
   .state('signup', {
-    url: '/',
+    url: '/signup',
     templateUrl: 'setup-signup.html'
   })
   .state('welcome', {
@@ -32,6 +32,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     url: '/group-location',
     templateUrl: 'group-location.html',
     controller: 'LocationCtrl'
+  })
+  .state('contacts', {
+    url: '/',
+    templateUrl: 'contacts.html',
+    controller: 'ContactsCtrl'
   })
 
   $urlRouterProvider.otherwise('/');
